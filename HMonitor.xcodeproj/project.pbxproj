@@ -7,13 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D94C920D897F30099BB0A /* HMProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D94C820D897F30099BB0A /* HMProfileCell.swift */; };
+		180D94CB20D898030099BB0A /* HMProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180D94CA20D898030099BB0A /* HMProfileCell.xib */; };
 		180DC98720D2187F00EE0BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DC98620D2187F00EE0BCC /* AppDelegate.swift */; };
-		180DC98920D2187F00EE0BCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DC98820D2187F00EE0BCC /* ViewController.swift */; };
-		180DC98C20D2187F00EE0BCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DC98A20D2187F00EE0BCC /* Main.storyboard */; };
 		180DC98E20D2188200EE0BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180DC98D20D2188200EE0BCC /* Assets.xcassets */; };
-		180DC99120D2188200EE0BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DC98F20D2188200EE0BCC /* LaunchScreen.storyboard */; };
 		180DC99C20D2188200EE0BCC /* HMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DC99B20D2188200EE0BCC /* HMonitorTests.swift */; };
 		180DC9A720D2188200EE0BCC /* HMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DC9A620D2188200EE0BCC /* HMonitorUITests.swift */; };
+		180DCAF320D3562D00EE0BCC /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA7420D3562D00EE0BCC /* WBHomeViewController.swift */; };
+		180DCAF920D3562D00EE0BCC /* WBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA7B20D3562D00EE0BCC /* WBWebViewController.swift */; };
+		180DCAFB20D3562D00EE0BCC /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA7F20D3562D00EE0BCC /* WBDiscoverViewController.swift */; };
+		180DCB0320D3562D00EE0BCC /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA8B20D3562D00EE0BCC /* WBMessageViewController.swift */; };
+		180DCB0420D3562D00EE0BCC /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA8D20D3562D00EE0BCC /* WBProfileViewController.swift */; };
+		180DCB0520D3562D00EE0BCC /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA8F20D3562D00EE0BCC /* WBMainViewController.swift */; };
+		180DCB0620D3562D00EE0BCC /* WBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9120D3562D00EE0BCC /* WBOAuthViewController.swift */; };
+		180DCB0720D3562D00EE0BCC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 180DCA9220D3562D00EE0BCC /* main.json */; };
+		180DCB0820D3562D00EE0BCC /* WBWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180DCA9420D3562D00EE0BCC /* WBWelcomeView.xib */; };
+		180DCB0920D3562D00EE0BCC /* WBNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9520D3562D00EE0BCC /* WBNewFeatureView.swift */; };
+		180DCB0A20D3562D00EE0BCC /* WBWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9620D3562D00EE0BCC /* WBWelcomeView.swift */; };
+		180DCB0B20D3562D00EE0BCC /* WBNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180DCA9720D3562D00EE0BCC /* WBNewFeatureView.xib */; };
+		180DCB0C20D3562D00EE0BCC /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9820D3562D00EE0BCC /* WBBaseViewController.swift */; };
+		180DCB0D20D3562D00EE0BCC /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9A20D3562D00EE0BCC /* WBDemoViewController.swift */; };
+		180DCB0E20D3562D00EE0BCC /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9B20D3562D00EE0BCC /* WBNavigationController.swift */; };
+		180DCB1020D3562D00EE0BCC /* WBStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCA9F20D3562D00EE0BCC /* WBStatusViewModel.swift */; };
+		180DCB1120D3562D00EE0BCC /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAA020D3562D00EE0BCC /* WBStatusListViewModel.swift */; };
+		180DCB1220D3562D00EE0BCC /* WBStatusListDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAA120D3562D00EE0BCC /* WBStatusListDAL.swift */; };
+		180DCB1320D3562D00EE0BCC /* WBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAA320D3562D00EE0BCC /* WBUser.swift */; };
+		180DCB1420D3562D00EE0BCC /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAA420D3562D00EE0BCC /* WBStatus.swift */; };
+		180DCB1520D3562D00EE0BCC /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAA520D3562D00EE0BCC /* WBStatusPicture.swift */; };
+		180DCB1620D3562D00EE0BCC /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAA820D3562D00EE0BCC /* FFLabel.swift */; };
+		180DCB1720D3562D00EE0BCC /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAAA20D3562D00EE0BCC /* UIColor+CZAddition.m */; };
+		180DCB1820D3562D00EE0BCC /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAAB20D3562D00EE0BCC /* UIView+CZAddition.m */; };
+		180DCB1920D3562D00EE0BCC /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAAE20D3562D00EE0BCC /* UIScreen+CZAddition.m */; };
+		180DCB1A20D3562D00EE0BCC /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAB020D3562D00EE0BCC /* UILabel+CZAddition.m */; };
+		180DCB1B20D3562D00EE0BCC /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAB220D3562D00EE0BCC /* NSString+CZBase64.m */; };
+		180DCB1C20D3562D00EE0BCC /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAB320D3562D00EE0BCC /* NSString+CZPath.m */; };
+		180DCB1D20D3562D00EE0BCC /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAB620D3562D00EE0BCC /* UIButton+CZAddition.m */; };
+		180DCB1E20D3562D00EE0BCC /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAB920D3562D00EE0BCC /* NSObject+CZRuntime.m */; };
+		180DCB1F20D3562D00EE0BCC /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCABC20D3562D00EE0BCC /* UIViewController+CZAddition.m */; };
+		180DCB2020D3562D00EE0BCC /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCABD20D3562D00EE0BCC /* NSString+CZHash.m */; };
+		180DCB2120D3562D00EE0BCC /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAC020D3562D00EE0BCC /* NSAttributedString+CZAdditon.m */; };
+		180DCB2220D3562D00EE0BCC /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAC120D3562D00EE0BCC /* NSArray+Log.m */; };
+		180DCB2320D3562D00EE0BCC /* CZMeituanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAC420D3562D00EE0BCC /* CZMeituanRefreshView.swift */; };
+		180DCB2420D3562D00EE0BCC /* CZRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAC520D3562D00EE0BCC /* CZRefreshControl.swift */; };
+		180DCB2520D3562D00EE0BCC /* CZMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180DCAC620D3562D00EE0BCC /* CZMeituanRefreshView.xib */; };
+		180DCB2620D3562D00EE0BCC /* CZHumanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180DCAC720D3562D00EE0BCC /* CZHumanRefreshView.xib */; };
+		180DCB2720D3562D00EE0BCC /* CZRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180DCAC820D3562D00EE0BCC /* CZRefreshView.xib */; };
+		180DCB2820D3562D00EE0BCC /* CZRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAC920D3562D00EE0BCC /* CZRefreshView.swift */; };
+		180DCB2A20D3562D00EE0BCC /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCACC20D3562D00EE0BCC /* WBNetworkManager+Extension.swift */; };
+		180DCB2B20D3562D00EE0BCC /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCACE20D3562D00EE0BCC /* WBUserAccount.swift */; };
+		180DCB2C20D3562D00EE0BCC /* CZSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD020D3562D00EE0BCC /* CZSQLiteManager.swift */; };
+		180DCB2D20D3562D00EE0BCC /* status.sql in Resources */ = {isa = PBXBuildFile; fileRef = 180DCAD120D3562D00EE0BCC /* status.sql */; };
+		180DCB2E20D3562D00EE0BCC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD320D3562D00EE0BCC /* String+Extensions.swift */; };
+		180DCB2F20D3562D00EE0BCC /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD420D3562D00EE0BCC /* UIImage+Extensions.swift */; };
+		180DCB3020D3562D00EE0BCC /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD520D3562D00EE0BCC /* UIBarButtonItem+Extensions.swift */; };
+		180DCB3120D3562D00EE0BCC /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD620D3562D00EE0BCC /* UIImageView+WebImage.swift */; };
+		180DCB3220D3562D00EE0BCC /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD720D3562D00EE0BCC /* Bundle+Extensions.swift */; };
+		180DCB3320D3562D00EE0BCC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAD820D3562D00EE0BCC /* Date+Extensions.swift */; };
+		180DCB3420D3562D00EE0BCC /* CZEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCADA20D3562D00EE0BCC /* CZEmoticonManager.swift */; };
+		180DCB3520D3562D00EE0BCC /* CZEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCADC20D3562D00EE0BCC /* CZEmoticon.swift */; };
+		180DCB3620D3562D00EE0BCC /* CZEmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCADD20D3562D00EE0BCC /* CZEmoticonAttachment.swift */; };
+		180DCB3720D3562D00EE0BCC /* CZEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCADE20D3562D00EE0BCC /* CZEmoticonPackage.swift */; };
+		180DCB3820D3562D00EE0BCC /* CZEmoticonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE020D3562D00EE0BCC /* CZEmoticonInputView.swift */; };
+		180DCB3920D3562D00EE0BCC /* CZEmoticonInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180DCAE120D3562D00EE0BCC /* CZEmoticonInputView.xib */; };
+		180DCB3A20D3562D00EE0BCC /* CZEmoticonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE220D3562D00EE0BCC /* CZEmoticonToolbar.swift */; };
+		180DCB3B20D3562D00EE0BCC /* CZEmoticonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE320D3562D00EE0BCC /* CZEmoticonLayout.swift */; };
+		180DCB3C20D3562D00EE0BCC /* CZEmoticonTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE420D3562D00EE0BCC /* CZEmoticonTipView.swift */; };
+		180DCB3D20D3562D00EE0BCC /* CZEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE520D3562D00EE0BCC /* CZEmoticonCell.swift */; };
+		180DCB3E20D3562D00EE0BCC /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180DCAE620D3562D00EE0BCC /* HMEmoticon.bundle */; };
+		180DCB3F20D3562D00EE0BCC /* WeiBoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE720D3562D00EE0BCC /* WeiBoCommon.swift */; };
+		180DCB4020D3562D00EE0BCC /* HMPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAE920D3562D00EE0BCC /* HMPhotoBrowserController.m */; };
+		180DCB4120D3562D00EE0BCC /* HMPhotoViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAEA20D3562D00EE0BCC /* HMPhotoViewerController.m */; };
+		180DCB4220D3562D00EE0BCC /* HMPhotoBrowserPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAEB20D3562D00EE0BCC /* HMPhotoBrowserPhotos.m */; };
+		180DCB4320D3562D00EE0BCC /* HMPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAEC20D3562D00EE0BCC /* HMPhotoProgressView.m */; };
+		180DCB4420D3562D00EE0BCC /* HMPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DCAF120D3562D00EE0BCC /* HMPhotoBrowserAnimator.m */; };
+		180DCB4720D393C900EE0BCC /* HMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCB4620D393C900EE0BCC /* HMNetworkManager.swift */; };
+		180DCB4920D3B52500EE0BCC /* HMBaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DCB4820D3B52500EE0BCC /* HMBaseNavigationBar.swift */; };
+		7DA1670469E6888294C73DA6 /* Pods_HMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2321DCA6DAE2B0B7714482D4 /* Pods_HMonitor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +103,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180D94C820D897F30099BB0A /* HMProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMProfileCell.swift; sourceTree = "<group>"; };
+		180D94CA20D898030099BB0A /* HMProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMProfileCell.xib; sourceTree = "<group>"; };
 		180DC98320D2187F00EE0BCC /* HMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DC98620D2187F00EE0BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		180DC98820D2187F00EE0BCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		180DC98B20D2187F00EE0BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180DC98D20D2188200EE0BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		180DC99020D2188200EE0BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180DC99220D2188200EE0BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180DC99720D2188200EE0BCC /* HMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DC99B20D2188200EE0BCC /* HMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMonitorTests.swift; sourceTree = "<group>"; };
@@ -47,6 +115,97 @@
 		180DC9A220D2188200EE0BCC /* HMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DC9A620D2188200EE0BCC /* HMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMonitorUITests.swift; sourceTree = "<group>"; };
 		180DC9A820D2188200EE0BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180DCA7420D3562D00EE0BCC /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
+		180DCA7B20D3562D00EE0BCC /* WBWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWebViewController.swift; sourceTree = "<group>"; };
+		180DCA7F20D3562D00EE0BCC /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
+		180DCA8B20D3562D00EE0BCC /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
+		180DCA8D20D3562D00EE0BCC /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		180DCA8F20D3562D00EE0BCC /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
+		180DCA9120D3562D00EE0BCC /* WBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBOAuthViewController.swift; sourceTree = "<group>"; };
+		180DCA9220D3562D00EE0BCC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		180DCA9420D3562D00EE0BCC /* WBWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBWelcomeView.xib; sourceTree = "<group>"; };
+		180DCA9520D3562D00EE0BCC /* WBNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNewFeatureView.swift; sourceTree = "<group>"; };
+		180DCA9620D3562D00EE0BCC /* WBWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWelcomeView.swift; sourceTree = "<group>"; };
+		180DCA9720D3562D00EE0BCC /* WBNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBNewFeatureView.xib; sourceTree = "<group>"; };
+		180DCA9820D3562D00EE0BCC /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
+		180DCA9A20D3562D00EE0BCC /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
+		180DCA9B20D3562D00EE0BCC /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
+		180DCA9F20D3562D00EE0BCC /* WBStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusViewModel.swift; sourceTree = "<group>"; };
+		180DCAA020D3562D00EE0BCC /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
+		180DCAA120D3562D00EE0BCC /* WBStatusListDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListDAL.swift; sourceTree = "<group>"; };
+		180DCAA320D3562D00EE0BCC /* WBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUser.swift; sourceTree = "<group>"; };
+		180DCAA420D3562D00EE0BCC /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
+		180DCAA520D3562D00EE0BCC /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
+		180DCAA820D3562D00EE0BCC /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
+		180DCAAA20D3562D00EE0BCC /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		180DCAAB20D3562D00EE0BCC /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		180DCAAC20D3562D00EE0BCC /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		180DCAAD20D3562D00EE0BCC /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		180DCAAE20D3562D00EE0BCC /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		180DCAAF20D3562D00EE0BCC /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		180DCAB020D3562D00EE0BCC /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		180DCAB120D3562D00EE0BCC /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		180DCAB220D3562D00EE0BCC /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		180DCAB320D3562D00EE0BCC /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		180DCAB420D3562D00EE0BCC /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		180DCAB520D3562D00EE0BCC /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		180DCAB620D3562D00EE0BCC /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		180DCAB720D3562D00EE0BCC /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		180DCAB820D3562D00EE0BCC /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		180DCAB920D3562D00EE0BCC /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		180DCABA20D3562D00EE0BCC /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		180DCABB20D3562D00EE0BCC /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		180DCABC20D3562D00EE0BCC /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		180DCABD20D3562D00EE0BCC /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		180DCABE20D3562D00EE0BCC /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		180DCABF20D3562D00EE0BCC /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		180DCAC020D3562D00EE0BCC /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		180DCAC120D3562D00EE0BCC /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		180DCAC220D3562D00EE0BCC /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		180DCAC420D3562D00EE0BCC /* CZMeituanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZMeituanRefreshView.swift; sourceTree = "<group>"; };
+		180DCAC520D3562D00EE0BCC /* CZRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZRefreshControl.swift; sourceTree = "<group>"; };
+		180DCAC620D3562D00EE0BCC /* CZMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZMeituanRefreshView.xib; sourceTree = "<group>"; };
+		180DCAC720D3562D00EE0BCC /* CZHumanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZHumanRefreshView.xib; sourceTree = "<group>"; };
+		180DCAC820D3562D00EE0BCC /* CZRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZRefreshView.xib; sourceTree = "<group>"; };
+		180DCAC920D3562D00EE0BCC /* CZRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZRefreshView.swift; sourceTree = "<group>"; };
+		180DCACC20D3562D00EE0BCC /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
+		180DCACE20D3562D00EE0BCC /* WBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUserAccount.swift; sourceTree = "<group>"; };
+		180DCAD020D3562D00EE0BCC /* CZSQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZSQLiteManager.swift; sourceTree = "<group>"; };
+		180DCAD120D3562D00EE0BCC /* status.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = status.sql; sourceTree = "<group>"; };
+		180DCAD320D3562D00EE0BCC /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		180DCAD420D3562D00EE0BCC /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		180DCAD520D3562D00EE0BCC /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		180DCAD620D3562D00EE0BCC /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		180DCAD720D3562D00EE0BCC /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		180DCAD820D3562D00EE0BCC /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		180DCADA20D3562D00EE0BCC /* CZEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonManager.swift; sourceTree = "<group>"; };
+		180DCADC20D3562D00EE0BCC /* CZEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticon.swift; sourceTree = "<group>"; };
+		180DCADD20D3562D00EE0BCC /* CZEmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonAttachment.swift; sourceTree = "<group>"; };
+		180DCADE20D3562D00EE0BCC /* CZEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonPackage.swift; sourceTree = "<group>"; };
+		180DCAE020D3562D00EE0BCC /* CZEmoticonInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonInputView.swift; sourceTree = "<group>"; };
+		180DCAE120D3562D00EE0BCC /* CZEmoticonInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZEmoticonInputView.xib; sourceTree = "<group>"; };
+		180DCAE220D3562D00EE0BCC /* CZEmoticonToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonToolbar.swift; sourceTree = "<group>"; };
+		180DCAE320D3562D00EE0BCC /* CZEmoticonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonLayout.swift; sourceTree = "<group>"; };
+		180DCAE420D3562D00EE0BCC /* CZEmoticonTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonTipView.swift; sourceTree = "<group>"; };
+		180DCAE520D3562D00EE0BCC /* CZEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEmoticonCell.swift; sourceTree = "<group>"; };
+		180DCAE620D3562D00EE0BCC /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
+		180DCAE720D3562D00EE0BCC /* WeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoCommon.swift; sourceTree = "<group>"; };
+		180DCAE920D3562D00EE0BCC /* HMPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoBrowserController.m; sourceTree = "<group>"; };
+		180DCAEA20D3562D00EE0BCC /* HMPhotoViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoViewerController.m; sourceTree = "<group>"; };
+		180DCAEB20D3562D00EE0BCC /* HMPhotoBrowserPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoBrowserPhotos.m; sourceTree = "<group>"; };
+		180DCAEC20D3562D00EE0BCC /* HMPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoProgressView.m; sourceTree = "<group>"; };
+		180DCAED20D3562D00EE0BCC /* HMPhotoBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoBrowserAnimator.h; sourceTree = "<group>"; };
+		180DCAEE20D3562D00EE0BCC /* HMPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoBrowserController.h; sourceTree = "<group>"; };
+		180DCAEF20D3562D00EE0BCC /* HMPhotoViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoViewerController.h; sourceTree = "<group>"; };
+		180DCAF020D3562D00EE0BCC /* HMPhotoBrowserPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoBrowserPhotos.h; sourceTree = "<group>"; };
+		180DCAF120D3562D00EE0BCC /* HMPhotoBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoBrowserAnimator.m; sourceTree = "<group>"; };
+		180DCAF220D3562D00EE0BCC /* HMPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoProgressView.h; sourceTree = "<group>"; };
+		180DCB4520D356B700EE0BCC /* Monitor-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monitor-Bridge.h"; sourceTree = "<group>"; };
+		180DCB4620D393C900EE0BCC /* HMNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMNetworkManager.swift; sourceTree = "<group>"; };
+		180DCB4820D3B52500EE0BCC /* HMBaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMBaseNavigationBar.swift; sourceTree = "<group>"; };
+		2321DCA6DAE2B0B7714482D4 /* Pods_HMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C22F0158AFF62A85187003C /* Pods-HMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMonitor/Pods-HMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		60CF23AD601FB59D7C54992A /* Pods-HMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMonitor/Pods-HMonitor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA1670469E6888294C73DA6 /* Pods_HMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +234,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180D94C720D897D80099BB0A /* profileCell */ = {
+			isa = PBXGroup;
+			children = (
+				180D94C820D897F30099BB0A /* HMProfileCell.swift */,
+				180D94CA20D898030099BB0A /* HMProfileCell.xib */,
+			);
+			path = profileCell;
+			sourceTree = "<group>";
+		};
 		180DC97A20D2187F00EE0BCC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +250,8 @@
 				180DC99A20D2188200EE0BCC /* HMonitorTests */,
 				180DC9A520D2188200EE0BCC /* HMonitorUITests */,
 				180DC98420D2187F00EE0BCC /* Products */,
+				F37399E8EDA5B88D44B633BF /* Pods */,
+				B5C749F3B77C22936D10A037 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +268,11 @@
 		180DC98520D2187F00EE0BCC /* HMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				180DCA7120D3562D00EE0BCC /* Classes */,
 				180DC98620D2187F00EE0BCC /* AppDelegate.swift */,
-				180DC98820D2187F00EE0BCC /* ViewController.swift */,
-				180DC98A20D2187F00EE0BCC /* Main.storyboard */,
 				180DC98D20D2188200EE0BCC /* Assets.xcassets */,
-				180DC98F20D2188200EE0BCC /* LaunchScreen.storyboard */,
 				180DC99220D2188200EE0BCC /* Info.plist */,
+				180DCB4520D356B700EE0BCC /* Monitor-Bridge.h */,
 			);
 			path = HMonitor;
 			sourceTree = "<group>";
@@ -125,6 +295,326 @@
 			path = HMonitorUITests;
 			sourceTree = "<group>";
 		};
+		180DCA7120D3562D00EE0BCC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA7220D3562D00EE0BCC /* View(视图和控制器) */,
+				180DCA9E20D3562D00EE0BCC /* ViewModel(视图模型) */,
+				180DCAA220D3562D00EE0BCC /* Model(模型) */,
+				180DCAA620D3562D00EE0BCC /* Tools(工具) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		180DCA7220D3562D00EE0BCC /* View(视图和控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA7320D3562D00EE0BCC /* Home */,
+				180DCA7E20D3562D00EE0BCC /* data */,
+				180DCA8020D3562D00EE0BCC /* statistics */,
+				180DCA8A20D3562D00EE0BCC /* Message */,
+				180DCA8C20D3562D00EE0BCC /* Profile */,
+				180DCA8E20D3562D00EE0BCC /* Main */,
+			);
+			path = "View(视图和控制器)";
+			sourceTree = "<group>";
+		};
+		180DCA7320D3562D00EE0BCC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA7420D3562D00EE0BCC /* WBHomeViewController.swift */,
+				180DCA7520D3562D00EE0BCC /* StatusCell */,
+				180DCA7B20D3562D00EE0BCC /* WBWebViewController.swift */,
+				180DCA7C20D3562D00EE0BCC /* TitleButton */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		180DCA7520D3562D00EE0BCC /* StatusCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatusCell;
+			sourceTree = "<group>";
+		};
+		180DCA7C20D3562D00EE0BCC /* TitleButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TitleButton;
+			sourceTree = "<group>";
+		};
+		180DCA7E20D3562D00EE0BCC /* data */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA7F20D3562D00EE0BCC /* WBDiscoverViewController.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		180DCA8020D3562D00EE0BCC /* statistics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = statistics;
+			sourceTree = "<group>";
+		};
+		180DCA8A20D3562D00EE0BCC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA8B20D3562D00EE0BCC /* WBMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		180DCA8C20D3562D00EE0BCC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				180D94C720D897D80099BB0A /* profileCell */,
+				180DCA8D20D3562D00EE0BCC /* WBProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		180DCA8E20D3562D00EE0BCC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA8F20D3562D00EE0BCC /* WBMainViewController.swift */,
+				180DCA9020D3562D00EE0BCC /* OAuth */,
+				180DCA9220D3562D00EE0BCC /* main.json */,
+				180DCA9320D3562D00EE0BCC /* NewFeature */,
+				180DCA9820D3562D00EE0BCC /* WBBaseViewController.swift */,
+				180DCA9920D3562D00EE0BCC /* 测试 */,
+				180DCA9B20D3562D00EE0BCC /* WBNavigationController.swift */,
+				180DCB4820D3B52500EE0BCC /* HMBaseNavigationBar.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		180DCA9020D3562D00EE0BCC /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA9120D3562D00EE0BCC /* WBOAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		180DCA9320D3562D00EE0BCC /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA9420D3562D00EE0BCC /* WBWelcomeView.xib */,
+				180DCA9520D3562D00EE0BCC /* WBNewFeatureView.swift */,
+				180DCA9620D3562D00EE0BCC /* WBWelcomeView.swift */,
+				180DCA9720D3562D00EE0BCC /* WBNewFeatureView.xib */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		180DCA9920D3562D00EE0BCC /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA9A20D3562D00EE0BCC /* WBDemoViewController.swift */,
+			);
+			path = "测试";
+			sourceTree = "<group>";
+		};
+		180DCA9E20D3562D00EE0BCC /* ViewModel(视图模型) */ = {
+			isa = PBXGroup;
+			children = (
+				180DCA9F20D3562D00EE0BCC /* WBStatusViewModel.swift */,
+				180DCAA020D3562D00EE0BCC /* WBStatusListViewModel.swift */,
+				180DCAA120D3562D00EE0BCC /* WBStatusListDAL.swift */,
+			);
+			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		180DCAA220D3562D00EE0BCC /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAA320D3562D00EE0BCC /* WBUser.swift */,
+				180DCAA420D3562D00EE0BCC /* WBStatus.swift */,
+				180DCAA520D3562D00EE0BCC /* WBStatusPicture.swift */,
+			);
+			path = "Model(模型)";
+			sourceTree = "<group>";
+		};
+		180DCAA620D3562D00EE0BCC /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAA720D3562D00EE0BCC /* FFLabel */,
+				180DCAA920D3562D00EE0BCC /* Additions */,
+				180DCAC320D3562D00EE0BCC /* CZRefreshControl */,
+				180DCACA20D3562D00EE0BCC /* Network */,
+				180DCACF20D3562D00EE0BCC /* SQLite */,
+				180DCAD220D3562D00EE0BCC /* Extensions */,
+				180DCAD920D3562D00EE0BCC /* Emoticon */,
+				180DCAE720D3562D00EE0BCC /* WeiBoCommon.swift */,
+				180DCAE820D3562D00EE0BCC /* PhotoBrowser */,
+			);
+			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		180DCAA720D3562D00EE0BCC /* FFLabel */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAA820D3562D00EE0BCC /* FFLabel.swift */,
+			);
+			path = FFLabel;
+			sourceTree = "<group>";
+		};
+		180DCAA920D3562D00EE0BCC /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAAA20D3562D00EE0BCC /* UIColor+CZAddition.m */,
+				180DCAAB20D3562D00EE0BCC /* UIView+CZAddition.m */,
+				180DCAAC20D3562D00EE0BCC /* UIButton+CZAddition.h */,
+				180DCAAD20D3562D00EE0BCC /* NSString+CZHash.h */,
+				180DCAAE20D3562D00EE0BCC /* UIScreen+CZAddition.m */,
+				180DCAAF20D3562D00EE0BCC /* UIViewController+CZAddition.h */,
+				180DCAB020D3562D00EE0BCC /* UILabel+CZAddition.m */,
+				180DCAB120D3562D00EE0BCC /* NSObject+CZRuntime.h */,
+				180DCAB220D3562D00EE0BCC /* NSString+CZBase64.m */,
+				180DCAB320D3562D00EE0BCC /* NSString+CZPath.m */,
+				180DCAB420D3562D00EE0BCC /* NSArray+Log.h */,
+				180DCAB520D3562D00EE0BCC /* NSAttributedString+CZAdditon.h */,
+				180DCAB620D3562D00EE0BCC /* UIButton+CZAddition.m */,
+				180DCAB720D3562D00EE0BCC /* UIView+CZAddition.h */,
+				180DCAB820D3562D00EE0BCC /* UIColor+CZAddition.h */,
+				180DCAB920D3562D00EE0BCC /* NSObject+CZRuntime.m */,
+				180DCABA20D3562D00EE0BCC /* UILabel+CZAddition.h */,
+				180DCABB20D3562D00EE0BCC /* UIScreen+CZAddition.h */,
+				180DCABC20D3562D00EE0BCC /* UIViewController+CZAddition.m */,
+				180DCABD20D3562D00EE0BCC /* NSString+CZHash.m */,
+				180DCABE20D3562D00EE0BCC /* NSString+CZBase64.h */,
+				180DCABF20D3562D00EE0BCC /* CZAdditions.h */,
+				180DCAC020D3562D00EE0BCC /* NSAttributedString+CZAdditon.m */,
+				180DCAC120D3562D00EE0BCC /* NSArray+Log.m */,
+				180DCAC220D3562D00EE0BCC /* NSString+CZPath.h */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		180DCAC320D3562D00EE0BCC /* CZRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAC420D3562D00EE0BCC /* CZMeituanRefreshView.swift */,
+				180DCAC520D3562D00EE0BCC /* CZRefreshControl.swift */,
+				180DCAC620D3562D00EE0BCC /* CZMeituanRefreshView.xib */,
+				180DCAC720D3562D00EE0BCC /* CZHumanRefreshView.xib */,
+				180DCAC820D3562D00EE0BCC /* CZRefreshView.xib */,
+				180DCAC920D3562D00EE0BCC /* CZRefreshView.swift */,
+			);
+			path = CZRefreshControl;
+			sourceTree = "<group>";
+		};
+		180DCACA20D3562D00EE0BCC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				180DCB4620D393C900EE0BCC /* HMNetworkManager.swift */,
+				180DCACC20D3562D00EE0BCC /* WBNetworkManager+Extension.swift */,
+				180DCACD20D3562D00EE0BCC /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		180DCACD20D3562D00EE0BCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180DCACE20D3562D00EE0BCC /* WBUserAccount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		180DCACF20D3562D00EE0BCC /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAD020D3562D00EE0BCC /* CZSQLiteManager.swift */,
+				180DCAD120D3562D00EE0BCC /* status.sql */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		180DCAD220D3562D00EE0BCC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAD320D3562D00EE0BCC /* String+Extensions.swift */,
+				180DCAD420D3562D00EE0BCC /* UIImage+Extensions.swift */,
+				180DCAD520D3562D00EE0BCC /* UIBarButtonItem+Extensions.swift */,
+				180DCAD620D3562D00EE0BCC /* UIImageView+WebImage.swift */,
+				180DCAD720D3562D00EE0BCC /* Bundle+Extensions.swift */,
+				180DCAD820D3562D00EE0BCC /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		180DCAD920D3562D00EE0BCC /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				180DCADA20D3562D00EE0BCC /* CZEmoticonManager.swift */,
+				180DCADB20D3562D00EE0BCC /* Model */,
+				180DCADF20D3562D00EE0BCC /* View */,
+				180DCAE620D3562D00EE0BCC /* HMEmoticon.bundle */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		180DCADB20D3562D00EE0BCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180DCADC20D3562D00EE0BCC /* CZEmoticon.swift */,
+				180DCADD20D3562D00EE0BCC /* CZEmoticonAttachment.swift */,
+				180DCADE20D3562D00EE0BCC /* CZEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		180DCADF20D3562D00EE0BCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAE020D3562D00EE0BCC /* CZEmoticonInputView.swift */,
+				180DCAE120D3562D00EE0BCC /* CZEmoticonInputView.xib */,
+				180DCAE220D3562D00EE0BCC /* CZEmoticonToolbar.swift */,
+				180DCAE320D3562D00EE0BCC /* CZEmoticonLayout.swift */,
+				180DCAE420D3562D00EE0BCC /* CZEmoticonTipView.swift */,
+				180DCAE520D3562D00EE0BCC /* CZEmoticonCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		180DCAE820D3562D00EE0BCC /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				180DCAE920D3562D00EE0BCC /* HMPhotoBrowserController.m */,
+				180DCAEA20D3562D00EE0BCC /* HMPhotoViewerController.m */,
+				180DCAEB20D3562D00EE0BCC /* HMPhotoBrowserPhotos.m */,
+				180DCAEC20D3562D00EE0BCC /* HMPhotoProgressView.m */,
+				180DCAED20D3562D00EE0BCC /* HMPhotoBrowserAnimator.h */,
+				180DCAEE20D3562D00EE0BCC /* HMPhotoBrowserController.h */,
+				180DCAEF20D3562D00EE0BCC /* HMPhotoViewerController.h */,
+				180DCAF020D3562D00EE0BCC /* HMPhotoBrowserPhotos.h */,
+				180DCAF120D3562D00EE0BCC /* HMPhotoBrowserAnimator.m */,
+				180DCAF220D3562D00EE0BCC /* HMPhotoProgressView.h */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		B5C749F3B77C22936D10A037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2321DCA6DAE2B0B7714482D4 /* Pods_HMonitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F37399E8EDA5B88D44B633BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C22F0158AFF62A85187003C /* Pods-HMonitor.debug.xcconfig */,
+				60CF23AD601FB59D7C54992A /* Pods-HMonitor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +622,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180DC9AB20D2188200EE0BCC /* Build configuration list for PBXNativeTarget "HMonitor" */;
 			buildPhases = (
+				C1F5076D3F4E1B298E4DC625 /* [CP] Check Pods Manifest.lock */,
 				180DC97F20D2187F00EE0BCC /* Sources */,
 				180DC98020D2187F00EE0BCC /* Frameworks */,
 				180DC98120D2187F00EE0BCC /* Resources */,
+				BB0DEB447FE313336CF80EEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +679,7 @@
 		180DC97B20D2187F00EE0BCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HM;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = hxlh;
@@ -229,9 +722,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180DC99120D2188200EE0BCC /* LaunchScreen.storyboard in Resources */,
+				180DCB0720D3562D00EE0BCC /* main.json in Resources */,
+				180DCB2720D3562D00EE0BCC /* CZRefreshView.xib in Resources */,
+				180DCB2520D3562D00EE0BCC /* CZMeituanRefreshView.xib in Resources */,
+				180DCB3E20D3562D00EE0BCC /* HMEmoticon.bundle in Resources */,
+				180DCB0B20D3562D00EE0BCC /* WBNewFeatureView.xib in Resources */,
+				180D94CB20D898030099BB0A /* HMProfileCell.xib in Resources */,
+				180DCB2D20D3562D00EE0BCC /* status.sql in Resources */,
+				180DCB0820D3562D00EE0BCC /* WBWelcomeView.xib in Resources */,
 				180DC98E20D2188200EE0BCC /* Assets.xcassets in Resources */,
-				180DC98C20D2187F00EE0BCC /* Main.storyboard in Resources */,
+				180DCB2620D3562D00EE0BCC /* CZHumanRefreshView.xib in Resources */,
+				180DCB3920D3562D00EE0BCC /* CZEmoticonInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +752,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB0DEB447FE313336CF80EEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HMonitor/Pods-HMonitor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProgressHUD/SwiftProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMonitor/Pods-HMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F5076D3F4E1B298E4DC625 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		180DC97F20D2187F00EE0BCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180DC98920D2187F00EE0BCC /* ViewController.swift in Sources */,
+				180DCB1F20D3562D00EE0BCC /* UIViewController+CZAddition.m in Sources */,
+				180DCB2C20D3562D00EE0BCC /* CZSQLiteManager.swift in Sources */,
+				180DCB1E20D3562D00EE0BCC /* NSObject+CZRuntime.m in Sources */,
+				180DCB2B20D3562D00EE0BCC /* WBUserAccount.swift in Sources */,
+				180DCB0320D3562D00EE0BCC /* WBMessageViewController.swift in Sources */,
+				180DCB0520D3562D00EE0BCC /* WBMainViewController.swift in Sources */,
+				180DCB1A20D3562D00EE0BCC /* UILabel+CZAddition.m in Sources */,
+				180DCB3620D3562D00EE0BCC /* CZEmoticonAttachment.swift in Sources */,
+				180DCB4020D3562D00EE0BCC /* HMPhotoBrowserController.m in Sources */,
+				180DCB3D20D3562D00EE0BCC /* CZEmoticonCell.swift in Sources */,
+				180DCAF920D3562D00EE0BCC /* WBWebViewController.swift in Sources */,
+				180DCB0C20D3562D00EE0BCC /* WBBaseViewController.swift in Sources */,
+				180DCB4420D3562D00EE0BCC /* HMPhotoBrowserAnimator.m in Sources */,
+				180DCB1320D3562D00EE0BCC /* WBUser.swift in Sources */,
+				180DCB0420D3562D00EE0BCC /* WBProfileViewController.swift in Sources */,
+				180DCB4220D3562D00EE0BCC /* HMPhotoBrowserPhotos.m in Sources */,
+				180DCAFB20D3562D00EE0BCC /* WBDiscoverViewController.swift in Sources */,
+				180DCB3420D3562D00EE0BCC /* CZEmoticonManager.swift in Sources */,
+				180DCB4320D3562D00EE0BCC /* HMPhotoProgressView.m in Sources */,
+				180DCB3820D3562D00EE0BCC /* CZEmoticonInputView.swift in Sources */,
+				180DCB2320D3562D00EE0BCC /* CZMeituanRefreshView.swift in Sources */,
+				180DCB1420D3562D00EE0BCC /* WBStatus.swift in Sources */,
+				180DCB2220D3562D00EE0BCC /* NSArray+Log.m in Sources */,
+				180DCB4720D393C900EE0BCC /* HMNetworkManager.swift in Sources */,
+				180DCB3020D3562D00EE0BCC /* UIBarButtonItem+Extensions.swift in Sources */,
+				180DCB1C20D3562D00EE0BCC /* NSString+CZPath.m in Sources */,
+				180DCB3A20D3562D00EE0BCC /* CZEmoticonToolbar.swift in Sources */,
+				180DCB4920D3B52500EE0BCC /* HMBaseNavigationBar.swift in Sources */,
+				180DCB3320D3562D00EE0BCC /* Date+Extensions.swift in Sources */,
+				180DCB1920D3562D00EE0BCC /* UIScreen+CZAddition.m in Sources */,
+				180DCB1D20D3562D00EE0BCC /* UIButton+CZAddition.m in Sources */,
+				180DCB1120D3562D00EE0BCC /* WBStatusListViewModel.swift in Sources */,
+				180DCB1020D3562D00EE0BCC /* WBStatusViewModel.swift in Sources */,
 				180DC98720D2187F00EE0BCC /* AppDelegate.swift in Sources */,
+				180DCB2A20D3562D00EE0BCC /* WBNetworkManager+Extension.swift in Sources */,
+				180DCB0D20D3562D00EE0BCC /* WBDemoViewController.swift in Sources */,
+				180DCB3520D3562D00EE0BCC /* CZEmoticon.swift in Sources */,
+				180DCB1620D3562D00EE0BCC /* FFLabel.swift in Sources */,
+				180DCB1220D3562D00EE0BCC /* WBStatusListDAL.swift in Sources */,
+				180DCB1720D3562D00EE0BCC /* UIColor+CZAddition.m in Sources */,
+				180DCB1B20D3562D00EE0BCC /* NSString+CZBase64.m in Sources */,
+				180DCB0A20D3562D00EE0BCC /* WBWelcomeView.swift in Sources */,
+				180DCB0E20D3562D00EE0BCC /* WBNavigationController.swift in Sources */,
+				180DCB3220D3562D00EE0BCC /* Bundle+Extensions.swift in Sources */,
+				180DCB4120D3562D00EE0BCC /* HMPhotoViewerController.m in Sources */,
+				180DCB2020D3562D00EE0BCC /* NSString+CZHash.m in Sources */,
+				180DCB0620D3562D00EE0BCC /* WBOAuthViewController.swift in Sources */,
+				180DCB2E20D3562D00EE0BCC /* String+Extensions.swift in Sources */,
+				180D94C920D897F30099BB0A /* HMProfileCell.swift in Sources */,
+				180DCB3120D3562D00EE0BCC /* UIImageView+WebImage.swift in Sources */,
+				180DCB1820D3562D00EE0BCC /* UIView+CZAddition.m in Sources */,
+				180DCB2820D3562D00EE0BCC /* CZRefreshView.swift in Sources */,
+				180DCB3F20D3562D00EE0BCC /* WeiBoCommon.swift in Sources */,
+				180DCB2420D3562D00EE0BCC /* CZRefreshControl.swift in Sources */,
+				180DCB1520D3562D00EE0BCC /* WBStatusPicture.swift in Sources */,
+				180DCB2120D3562D00EE0BCC /* NSAttributedString+CZAdditon.m in Sources */,
+				180DCB0920D3562D00EE0BCC /* WBNewFeatureView.swift in Sources */,
+				180DCB2F20D3562D00EE0BCC /* UIImage+Extensions.swift in Sources */,
+				180DCB3B20D3562D00EE0BCC /* CZEmoticonLayout.swift in Sources */,
+				180DCAF320D3562D00EE0BCC /* WBHomeViewController.swift in Sources */,
+				180DCB3C20D3562D00EE0BCC /* CZEmoticonTipView.swift in Sources */,
+				180DCB3720D3562D00EE0BCC /* CZEmoticonPackage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +903,6 @@
 			targetProxy = 180DC9A320D2188200EE0BCC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		180DC98A20D2187F00EE0BCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				180DC98B20D2187F00EE0BCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		180DC98F20D2188200EE0BCC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				180DC99020D2188200EE0BCC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		180DC9A920D2188200EE0BCC /* Debug */ = {
@@ -428,37 +1021,47 @@
 		};
 		180DC9AC20D2188200EE0BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C22F0158AFF62A85187003C /* Pods-HMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7EK3GJ665;
 				INFOPLIST_FILE = HMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hxlh.HMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HMonitor/Monitor-Bridge.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		180DC9AD20D2188200EE0BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CF23AD601FB59D7C54992A /* Pods-HMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7EK3GJ665;
 				INFOPLIST_FILE = HMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hxlh.HMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HMonitor/Monitor-Bridge.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
