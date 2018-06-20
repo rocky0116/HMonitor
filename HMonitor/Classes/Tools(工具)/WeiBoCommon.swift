@@ -15,6 +15,7 @@ let WBAppKey = "1841140171"
 let WBAppSecret = "10ff11132ca24e9ef73bfa29dfdbec78"
 /// 回调地址 - 登录完成调转的 URL，参数以 get 形式拼接
 let WBRedirectURI = "http://baidu.com"
+let HMBaseUrl = "http://gank.io/api/"
 
 // MARK: - 全局通知定义
 /// 用户需要登录通知

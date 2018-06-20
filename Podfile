@@ -10,6 +10,6 @@ pod "SDWebImage"
 pod "FMDB"
 pod "SwiftProgressHUD"
 pod "pop"
-
+pod "MJRefresh"
 
 end

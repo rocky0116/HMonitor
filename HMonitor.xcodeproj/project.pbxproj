@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180CFFD920D9F712002A8A6D /* HMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CFFD820D9F712002A8A6D /* HMNetwork.swift */; };
 		180D94C920D897F30099BB0A /* HMProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D94C820D897F30099BB0A /* HMProfileCell.swift */; };
 		180D94CB20D898030099BB0A /* HMProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180D94CA20D898030099BB0A /* HMProfileCell.xib */; };
 		180DC98720D2187F00EE0BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DC98620D2187F00EE0BCC /* AppDelegate.swift */; };
@@ -103,6 +104,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180CFFD820D9F712002A8A6D /* HMNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMNetwork.swift; sourceTree = "<group>"; };
 		180D94C820D897F30099BB0A /* HMProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMProfileCell.swift; sourceTree = "<group>"; };
 		180D94CA20D898030099BB0A /* HMProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMProfileCell.xib; sourceTree = "<group>"; };
 		180DC98320D2187F00EE0BCC /* HMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -513,6 +515,7 @@
 				180DCB4620D393C900EE0BCC /* HMNetworkManager.swift */,
 				180DCACC20D3562D00EE0BCC /* WBNetworkManager+Extension.swift */,
 				180DCACD20D3562D00EE0BCC /* Model */,
+				180CFFD820D9F712002A8A6D /* HMNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HMonitor/Pods-HMonitor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProgressHUD/SwiftProgressHUD.framework",
@@ -772,6 +776,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProgressHUD.framework",
@@ -823,6 +828,7 @@
 				180DCB4420D3562D00EE0BCC /* HMPhotoBrowserAnimator.m in Sources */,
 				180DCB1320D3562D00EE0BCC /* WBUser.swift in Sources */,
 				180DCB0420D3562D00EE0BCC /* WBProfileViewController.swift in Sources */,
+				180CFFD920D9F712002A8A6D /* HMNetwork.swift in Sources */,
 				180DCB4220D3562D00EE0BCC /* HMPhotoBrowserPhotos.m in Sources */,
 				180DCAFB20D3562D00EE0BCC /* WBDiscoverViewController.swift in Sources */,
 				180DCB3420D3562D00EE0BCC /* CZEmoticonManager.swift in Sources */,

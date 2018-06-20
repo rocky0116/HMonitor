@@ -46,6 +46,8 @@ class WBProfileViewController: WBBaseViewController {
         headView.addSubview(userNameLab)
         
         tableView?.tableHeaderView = headView
+        
+        footer.isHidden = true
     }
 
 }
@@ -103,7 +105,7 @@ extension WBProfileViewController{
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return 50
     }
     
     

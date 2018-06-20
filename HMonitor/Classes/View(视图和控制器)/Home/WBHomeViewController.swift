@@ -59,7 +59,7 @@ class WBHomeViewController: WBBaseViewController {
         
         print("准备刷新")
         // Xcode 8.0 的刷新控件，beginRefreshing 方法，什么都不显示！
-        refreshControl?.beginRefreshing()
+//        refreshControl?.beginRefreshing()
         
         // 模拟演示加载数据
        
@@ -69,7 +69,7 @@ class WBHomeViewController: WBBaseViewController {
                 
                 print("加载数据结束)")
                 // 结束刷新控件
-                self.refreshControl?.endRefreshing()
+//                self.refreshControl?.endRefreshing()
                 // 恢复上拉刷新标记
                 self.isPullup = false
                 
@@ -111,6 +111,8 @@ class WBHomeViewController: WBBaseViewController {
         tableView?.separatorStyle = .none
         
         setupNavTitle()
+        
+        footer.isHidden = true
     }
 }
 

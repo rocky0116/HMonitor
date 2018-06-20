@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 /// 所有主控制器的基类控制器
 class WBBaseViewController: UIViewController {
@@ -17,7 +18,12 @@ class WBBaseViewController: UIViewController {
     /// 表格视图 - 如果用户没有登录，就不创建
     var tableView: UITableView?
     /// 刷新控件
-    var refreshControl: UIRefreshControl?
+//    var refreshControl: UIRefreshControl?
+    // 顶部刷新
+    let header = MJRefreshNormalHeader()
+    // 底部刷新
+    let footer = MJRefreshAutoNormalFooter()
+    
     /// 上拉刷新标记
     var isPullup = false
     
@@ -56,7 +62,7 @@ class WBBaseViewController: UIViewController {
     /// 加载数据 - 具体的实现由子类负责
     @objc func loadData() {
         // 如果子类不实现任何方法，默认关闭刷新控件
-        refreshControl?.endRefreshing()
+        
     }
 
     
@@ -110,7 +116,7 @@ class WBBaseViewController: UIViewController {
         tableView?.delegate = self
         
         // 设置内容缩进
-        tableView?.contentInset = UIEdgeInsets(top: 20,
+        tableView?.contentInset = UIEdgeInsets(top: 40,
                                                left: 0,
                                                bottom: tabBarController?.tabBar.bounds.height ?? 49,
                                                right: 0)
@@ -120,13 +126,40 @@ class WBBaseViewController: UIViewController {
         
         // 设置刷新控件
         // 1> 实例化控件
-        refreshControl = UIRefreshControl()
+        refresh()
+//        refreshControl = UIRefreshControl()
         
         // 2> 添加到表格视图
-        tableView?.addSubview(refreshControl!)
+//        tableView?.addSubview(refreshControl!)
         
         // 3> 添加监听方法
-        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
+//        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
+    }
+    
+   
+    func refresh(){
+        // 下拉刷新
+        
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+        
+        // 上拉刷新
+        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRefresh))
+        
+        tableView?.mj_header = header
+        tableView?.mj_footer = footer
+        
+    }
+    
+    @objc func headerRefresh(){
+        tableView?.mj_header.endRefreshing()//结束头部刷新
+        loadData()
+        print("刷新")
+    }
+    
+    @objc func footerRefresh(){
+        loadData()
+        tableView?.mj_footer.endRefreshing()//结束尾部刷新
+        print("加载")
     }
     
     
