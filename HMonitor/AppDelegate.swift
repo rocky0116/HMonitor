@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 应用程序额外设置
         setupAdditions()
         
-        window = UIWindow()
+//        window = UIWindow()
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         
         window?.rootViewController = WBMainViewController()
