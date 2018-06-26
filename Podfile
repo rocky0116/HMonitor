@@ -11,5 +11,10 @@ pod "FMDB"
 pod "SwiftProgressHUD"
 pod "pop"
 pod "MJRefresh"
+pod "SGPagingView"
+pod "RxSwift"
+pod "RxCocoa"
+pod "PGDatePicker"
+pod "Charts"
 
 end

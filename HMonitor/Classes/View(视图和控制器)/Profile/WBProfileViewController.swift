@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 private let cellId = "cellId"
 class WBProfileViewController: WBBaseViewController {
@@ -16,8 +17,41 @@ class WBProfileViewController: WBBaseViewController {
     let userImageView = UIImageView(image: UIImage(named: "timg"))
     let headView = UIView()
     let userNameLab = UILabel()
-    override func setupTableView() {
-        super.setupTableView()
+    /// 表格视图 - 如果用户没有登录，就不创建
+    var tableView: UITableView?
+    /// 刷新控件
+    //    var refreshControl: UIRefreshControl?
+   
+    override func setupUI() {
+        super.setupUI()
+        print("个人中心")
+        setupTableView()
+    }
+   
+    /// 设置表格视图 - 用户登录之后执行
+    /// 子类重写此方法，因为子类不需要关心用户登录之前的逻辑
+    func setupTableView() {
+        
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        
+        view.insertSubview(tableView!, belowSubview: navigationBar)
+        
+        // 设置数据源&代理 -> 目的：子类直接实现数据源方法
+        tableView?.dataSource = self
+        tableView?.delegate = self
+        
+        // 设置内容缩进
+        tableView?.contentInset = UIEdgeInsets(top: 40,
+                                               left: 0,
+                                               bottom: tabBarController?.tabBar.bounds.height ?? 49,
+                                               right: 0)
+        
+        // 修改指示器的缩进 - 强行解包是为了拿到一个必有的 inset
+        tableView?.scrollIndicatorInsets = tableView!.contentInset
+        
+        // 设置刷新控件
+        // 1> 实例化控件
+        refresh()
         
         // 注册原型 cell
         tableView?.register(UINib(nibName: "HMProfileCell", bundle: nil), forCellReuseIdentifier: cellId)
@@ -27,7 +61,29 @@ class WBProfileViewController: WBBaseViewController {
         tableView?.rowHeight = 50
         
         setupHeader()
+    }
+    
+    
+    func refresh(){
+        // 下拉刷新
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+        // 上拉刷新
+        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRefresh))
+        tableView?.mj_header = header
+        tableView?.mj_footer = footer
         
+    }
+    
+    @objc func headerRefresh(){
+        tableView?.mj_header.endRefreshing()//结束头部刷新
+        loadData()
+        print("刷新")
+    }
+    
+    @objc func footerRefresh(){
+        loadData()
+        tableView?.mj_footer.endRefreshing()//结束尾部刷新
+        print("加载")
     }
     
     func setupHeader(){
@@ -52,12 +108,12 @@ class WBProfileViewController: WBBaseViewController {
 
 }
 
-extension WBProfileViewController{
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension WBProfileViewController: UITableViewDataSource,UITableViewDelegate{
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
       
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? HMProfileCell
@@ -104,7 +160,7 @@ extension WBProfileViewController{
 //        }
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     

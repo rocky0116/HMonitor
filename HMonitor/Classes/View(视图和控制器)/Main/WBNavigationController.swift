@@ -1,6 +1,6 @@
 //
 //  WBNavigationController.swift
-//  传智微博
+//  wz
 //
 //  Created by apple on 16/6/29.
 //  Copyright © 2016年 itcast. All rights reserved.

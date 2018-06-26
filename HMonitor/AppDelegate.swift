@@ -21,7 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         
-        window?.rootViewController = WBMainViewController()
+        if UserDefaults.standard.string(forKey: token) == nil {
+            window?.rootViewController = HMLoginController()
+        }else{
+            window?.rootViewController = WBMainViewController()
+        }
+//        window?.rootViewController = HMLoginController()//WBMainViewController()
         window?.makeKeyAndVisible()
         
         loadAppInfo()

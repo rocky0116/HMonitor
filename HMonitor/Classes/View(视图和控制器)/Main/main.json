@@ -9,7 +9,7 @@
     "imageName" : "jc"
   },
   {
-    "clsName" : "WBMessageViewController",
+    "clsName" : "WBDiscoverViewController",
     "title" : "数据查询",
     "visitorInfo" : {
       "imageName" : "visitordiscover_image_message",
@@ -18,7 +18,7 @@
     "imageName" : "data"
   },
   {
-    "clsName" : "WBDiscoverViewController",
+    "clsName" : "HMStatisticsController",
     "title" : "统计分析",
     "visitorInfo" : {
       "imageName" : "visitordiscover_image_message",

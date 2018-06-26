@@ -157,7 +157,6 @@ extension WBMainViewController: UITabBarControllerDelegate {
             let vc = nav.childViewControllers[0] as! WBHomeViewController
             
             // b) 滚动到顶部
-            vc.tableView?.setContentOffset(CGPoint(x: 0, y: -64), animated: true)
             
             // 4> 刷新数据 － 增加延迟，是保证表格先滚动到顶部再刷新
            

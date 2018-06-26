@@ -7,173 +7,64 @@
 //
 
 import UIKit
-
-/// 原创微博可重用 cell id
-private let originalCellId = "originalCellId"
-/// 被转发微博的可重用 cell id
-private let retweetedCellId = "retweetedCellId"
+import SGPagingView
+import RxSwift
+import RxCocoa
 
 class WBHomeViewController: WBBaseViewController {
 
-    /// 列表视图模型
-    lazy var listViewModel = WBStatusListViewModel()
+    ///标题内容
+    private var pageTitleView: SGPageTitleView?
+    private var pagecontentView: SGPageContentView?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // 注册通知
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(browserPhoto),
-            name: NSNotification.Name(rawValue: WBStatusCellBrowserPhotoNotification),
-            object: nil)
-    }
-    
-    deinit {
-        // 注销通知
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    /// 浏览照片通知监听方法
-    @objc func browserPhoto(n: Notification) {
-        
-        // 1. 从 通知的 userInfo 提取参数
-        guard let selectedIndex = n.userInfo?[WBStatusCellBrowserPhotoSelectedIndexKey] as? Int,
-            let urls = n.userInfo?[WBStatusCellBrowserPhotoURLsKey] as? [String],
-            let imageViewList = n.userInfo?[WBStatusCellBrowserPhotoImageViewsKey] as? [UIImageView]
-            else {
-                return
-        }
-        
-        // 2. 展现照片浏览控制器
-        let vc = HMPhotoBrowserController.photoBrowser(
-            withSelectedIndex: selectedIndex,
-            urls: urls,
-            parentImageViews: imageViewList)
-        
-        present(vc, animated: true, completion: nil)
-    }
-    
-    /// 加载数据
-    override func loadData() {
-        
-        print("准备刷新")
-        // Xcode 8.0 的刷新控件，beginRefreshing 方法，什么都不显示！
-//        refreshControl?.beginRefreshing()
-        
-        // 模拟演示加载数据
-       
-        
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            self.listViewModel.loadStatus(pullup: self.isPullup) { (isSuccess, shouldRefresh) in
-                
-                print("加载数据结束)")
-                // 结束刷新控件
-//                self.refreshControl?.endRefreshing()
-                // 恢复上拉刷新标记
-                self.isPullup = false
-                
-                // 刷新表格
-                if shouldRefresh {
-                    self.tableView?.reloadData()
-                }
-            }
-        }
-    }
-    
-    /// 显示好友
-    @objc func showFriends() {
-
-        let vc = WBDemoViewController()
-        
-        // push 的动作是 nav 做的
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    /// 重写父类的方法
-    override func setupTableView() {
-        
-        super.setupTableView()
-        
-        // 设置导航栏按钮
-        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFriends))
-        
-        // 注册原型 cell
-        tableView?.register(UINib(nibName: "WBStatusNormalCell", bundle: nil), forCellReuseIdentifier: originalCellId)
-        tableView?.register(UINib(nibName: "WBStatusRetweetedCell", bundle: nil), forCellReuseIdentifier: retweetedCellId)
-        
-        // 设置行高
-        // 取消自动行高
-        // tableView?.rowHeight = UITableViewAutomaticDimension
-        tableView?.estimatedRowHeight = 300
-        
-        // 取消分隔线
-        tableView?.separatorStyle = .none
-        
+    override func setupUI() {
+        super.setupUI()
         setupNavTitle()
-        
-        footer.isHidden = true
+        addSegmented()
+    }
+    
+    override func segementDidchange(segmented: UISegmentedControl) {
+        print("首页选择",segmented.selectedSegmentIndex)
+        print(segmented.titleForSegment(at: segmented.selectedSegmentIndex))
     }
 }
 
-// MARK: - 表格数据源方法，具体的数据源方法实现，不需要 super
-extension WBHomeViewController {
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listViewModel.statusList.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        // 0. 取出视图模型，根据视图模型判断可重用 cell
-        let vm = listViewModel.statusList[indexPath.row]
-
-        let cellId = (vm.status.retweeted_status != nil) ? retweetedCellId : originalCellId
-        
-        // 1. 取 cell - 本身会调用代理方法(如果有)
-        // 如果没有，找到 cell，按照自动布局的规则，从上向下计算，找到向下的约束，从而计算动态行高
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        
-       
-        
-        // 3. 返回 cell
-        return cell
-    }
-    
-    /// 父类必须实现代理方法，子类才能够重写，Swift 3.0 才是如此，2.0 不需要
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        // 1. 根据 indexPath 获取视图模型
-        let vm = listViewModel.statusList[indexPath.row]
-        
-        // 2. 返回计算好的行高
-        return vm.rowHeight
-    }
-    
-    
-}
 
 
 // MARK: - 设置界面
 extension WBHomeViewController {
     
-    
-    
     /// 设置导航栏标题
      func setupNavTitle() {
         
-        let title = HMNetworkManager.shared.userAccount.screen_name
+        let title = HMNetworkManager.shared.userAccount.screen_name == nil ? "首页" : HMNetworkManager.shared.userAccount.screen_name
         
-        let button = UIButton.cz_textButton(title, fontSize: 14, normalColor: UIColor.gray, highlightedColor: UIColor.orange)
-        
+        let button = UIButton()
+        button.setTitle(title, for: [])
+        button.setImage(UIImage(named: "定位"), for: [])
+        button.setTitleColor(UIColor.darkGray, for: [])
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         navItem.titleView = button
         
-        button?.addTarget(self, action: #selector(clickTitleButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(clickTitleButton), for: .touchUpInside)
+        
+        navItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "切换"), style: UIBarButtonItemStyle.init(rawValue: 0)!, target: self, action: #selector(switchQy))
     }
     
+    //MARK: 跳转到城市区域列表
     @objc func clickTitleButton(btn: UIButton) {
+//        let vc = HMCityController()
+        // push 的动作是 nav 做的
+//        navigationController?.pushViewController(vc, animated: true)
         
-        // 设置选中状态
-        btn.isSelected = !btn.isSelected
+        let vc = UINavigationController(rootViewController: HMCityController())
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    //MARK: 切换到企业列表
+    @objc func switchQy() {
+        let vc = WBDemoViewController()
+        // push 的动作是 nav 做的
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
