@@ -16,5 +16,6 @@ pod "RxSwift"
 pod "RxCocoa"
 pod "PGDatePicker"
 pod "Charts"
+pod "BSImagePicker"
 
 end

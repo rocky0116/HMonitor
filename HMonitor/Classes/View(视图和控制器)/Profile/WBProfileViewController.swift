@@ -8,6 +8,7 @@
 
 import UIKit
 import MJRefresh
+import SwiftProgressHUD
 
 private let cellId = "cellId"
 class WBProfileViewController: WBBaseViewController {
@@ -128,36 +129,31 @@ extension WBProfileViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        switch indexPath.row {
-//        case 0:
-//            if let takeCV = storyboard?.instantiateViewController(withIdentifier: "TakeCV") as? TakeController{
-//                self.navigationController?.pushViewController(takeCV, animated: true)
-//            }
-//        case 1:
-//            if let messageCV = storyboard?.instantiateViewController(withIdentifier: "messageCV") as? MessageController{
-//                self.navigationController?.pushViewController(messageCV, animated: true)
-//            }
-//        case 2:
-//            if let logCV = storyboard?.instantiateViewController(withIdentifier: "logCV") as? WarnLogController{
-//                self.navigationController?.pushViewController(logCV, animated: true)
-//            }
-//        case 3:
-//            print("ideaCV")
-//            if let ideaCV = storyboard?.instantiateViewController(withIdentifier: "ideaCV") as? IdeaController{
-//                self.navigationController?.pushViewController(ideaCV, animated: true)
-//            }
-//        case 4:
-//            if let aboutmCV = storyboard?.instantiateViewController(withIdentifier: "AboutmeController") as? AboutMeViewController{
-//                self.navigationController?.pushViewController(aboutmCV, animated: true)
-//            }
-//        case 5:
-//            let alert = UIAlertView(title: "温馨提示", message: "清除成功", delegate: nil, cancelButtonTitle: "知道了")
-//            alert.show()
-//        case 6:
-//            print("dianjiasfdafa")
-//        default:
-//            print("0000000")
-//        }
+        var vc : WBBaseViewController?
+        switch indexPath.row {
+        case 0:
+            vc = HMTakeController()
+        case 1:
+            vc = HMMessageController()
+        case 2:
+            vc = HMLogController()
+        case 3:
+            vc = HMFeedBackController()
+        case 4:
+            vc = HMAboutController()
+        case 5:
+            SwiftProgressHUD.showSuccess("清除成功")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                SwiftProgressHUD.hideAllHUD()
+            }
+            return
+        
+        default:
+            return
+        }
+        
+        // push 的动作是 nav 做的
+        navigationController?.pushViewController(vc!, animated: true)
     }
     
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

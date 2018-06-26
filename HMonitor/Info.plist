@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>环信云需要定位权限才可以使用</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>环信云需要定位权限才可以使用</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>环信云需要定位权限才可以使用，如果您需要使用后台定位功能请选择“始终允许”</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>环信云需要相册权限才可以使用</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>环信云需要相册权限才可以使用</string>
 	<key>UILaunchStoryboardName</key>
 	<string></string>
 	<key>CFBundleDevelopmentRegion</key>

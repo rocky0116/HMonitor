@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180BF6FB20E1D1E600C6A299 /* HMAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF6FA20E1D1E600C6A299 /* HMAboutController.swift */; };
+		180BF6FD20E1D1FE00C6A299 /* HMTakeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF6FC20E1D1FE00C6A299 /* HMTakeController.swift */; };
+		180BF6FF20E1D21800C6A299 /* HMMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF6FE20E1D21800C6A299 /* HMMessageController.swift */; };
+		180BF70120E1D23000C6A299 /* HMLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF70020E1D23000C6A299 /* HMLogController.swift */; };
+		180BF70320E1D25C00C6A299 /* HMFeedBackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF70220E1D25C00C6A299 /* HMFeedBackController.swift */; };
+		180BF70620E1E32800C6A299 /* HMMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF70420E1E32800C6A299 /* HMMessageCell.swift */; };
+		180BF70720E1E32800C6A299 /* HMMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180BF70520E1E32800C6A299 /* HMMessageCell.xib */; };
+		180BF70A20E1E5B900C6A299 /* HMLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF70820E1E5B900C6A299 /* HMLogCell.swift */; };
+		180BF70B20E1E5B900C6A299 /* HMLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180BF70920E1E5B900C6A299 /* HMLogCell.xib */; };
+		180BF70D20E1E87000C6A299 /* QyPkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF70C20E1E87000C6A299 /* QyPkData.swift */; };
+		180BF71020E2194100C6A299 /* HMFeedBackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF70E20E2194100C6A299 /* HMFeedBackCell.swift */; };
+		180BF71120E2194100C6A299 /* HMFeedBackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180BF70F20E2194100C6A299 /* HMFeedBackCell.xib */; };
+		180BF71320E225C300C6A299 /* HMPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF71220E225C300C6A299 /* HMPictureView.swift */; };
 		180CFFD920D9F712002A8A6D /* HMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CFFD820D9F712002A8A6D /* HMNetwork.swift */; };
 		180D94C920D897F30099BB0A /* HMProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D94C820D897F30099BB0A /* HMProfileCell.swift */; };
 		180D94CB20D898030099BB0A /* HMProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180D94CA20D898030099BB0A /* HMProfileCell.xib */; };
@@ -172,6 +185,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180BF6FA20E1D1E600C6A299 /* HMAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAboutController.swift; sourceTree = "<group>"; };
+		180BF6FC20E1D1FE00C6A299 /* HMTakeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMTakeController.swift; sourceTree = "<group>"; };
+		180BF6FE20E1D21800C6A299 /* HMMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMessageController.swift; sourceTree = "<group>"; };
+		180BF70020E1D23000C6A299 /* HMLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMLogController.swift; sourceTree = "<group>"; };
+		180BF70220E1D25C00C6A299 /* HMFeedBackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFeedBackController.swift; sourceTree = "<group>"; };
+		180BF70420E1E32800C6A299 /* HMMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMessageCell.swift; sourceTree = "<group>"; };
+		180BF70520E1E32800C6A299 /* HMMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMessageCell.xib; sourceTree = "<group>"; };
+		180BF70820E1E5B900C6A299 /* HMLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMLogCell.swift; sourceTree = "<group>"; };
+		180BF70920E1E5B900C6A299 /* HMLogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMLogCell.xib; sourceTree = "<group>"; };
+		180BF70C20E1E87000C6A299 /* QyPkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QyPkData.swift; sourceTree = "<group>"; };
+		180BF70E20E2194100C6A299 /* HMFeedBackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFeedBackCell.swift; sourceTree = "<group>"; };
+		180BF70F20E2194100C6A299 /* HMFeedBackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMFeedBackCell.xib; sourceTree = "<group>"; };
+		180BF71220E225C300C6A299 /* HMPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMPictureView.swift; sourceTree = "<group>"; };
 		180CFFD820D9F712002A8A6D /* HMNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMNetwork.swift; sourceTree = "<group>"; };
 		180D94C820D897F30099BB0A /* HMProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMProfileCell.swift; sourceTree = "<group>"; };
 		180D94CA20D898030099BB0A /* HMProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMProfileCell.xib; sourceTree = "<group>"; };
@@ -377,6 +403,13 @@
 			children = (
 				180D94C820D897F30099BB0A /* HMProfileCell.swift */,
 				180D94CA20D898030099BB0A /* HMProfileCell.xib */,
+				180BF70420E1E32800C6A299 /* HMMessageCell.swift */,
+				180BF70520E1E32800C6A299 /* HMMessageCell.xib */,
+				180BF70820E1E5B900C6A299 /* HMLogCell.swift */,
+				180BF70920E1E5B900C6A299 /* HMLogCell.xib */,
+				180BF70E20E2194100C6A299 /* HMFeedBackCell.swift */,
+				180BF70F20E2194100C6A299 /* HMFeedBackCell.xib */,
+				180BF71220E225C300C6A299 /* HMPictureView.swift */,
 			);
 			path = profileCell;
 			sourceTree = "<group>";
@@ -503,7 +536,12 @@
 			isa = PBXGroup;
 			children = (
 				180D94C720D897D80099BB0A /* profileCell */,
+				180BF6FC20E1D1FE00C6A299 /* HMTakeController.swift */,
 				180DCA8D20D3562D00EE0BCC /* WBProfileViewController.swift */,
+				180BF6FA20E1D1E600C6A299 /* HMAboutController.swift */,
+				180BF6FE20E1D21800C6A299 /* HMMessageController.swift */,
+				180BF70020E1D23000C6A299 /* HMLogController.swift */,
+				180BF70220E1D25C00C6A299 /* HMFeedBackController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -564,6 +602,7 @@
 		180DCAA220D3562D00EE0BCC /* Model(模型) */ = {
 			isa = PBXGroup;
 			children = (
+				180BF70C20E1E87000C6A299 /* QyPkData.swift */,
 				1818963320E0D57100DEA4C7 /* AreaModel.swift */,
 				181895D820DE97B600DEA4C7 /* CityData.swift */,
 				181895E720DE97B900DEA4C7 /* CityRootClass.swift */,
@@ -932,14 +971,17 @@
 				180DCB0720D3562D00EE0BCC /* main.json in Resources */,
 				1818964720E0F3A700DEA4C7 /* HMYzCell.xib in Resources */,
 				180DCB2720D3562D00EE0BCC /* CZRefreshView.xib in Resources */,
+				180BF71120E2194100C6A299 /* HMFeedBackCell.xib in Resources */,
 				181895C620DE966D00DEA4C7 /* LoginView.xib in Resources */,
 				180DCB2520D3562D00EE0BCC /* CZMeituanRefreshView.xib in Resources */,
+				180BF70B20E1E5B900C6A299 /* HMLogCell.xib in Resources */,
 				180DCB3E20D3562D00EE0BCC /* HMEmoticon.bundle in Resources */,
 				1818963F20E0E13000DEA4C7 /* HMQyDetailCell.xib in Resources */,
 				180DCB0B20D3562D00EE0BCC /* WBNewFeatureView.xib in Resources */,
 				1818964320E0EC7100DEA4C7 /* HMQyPkCell.xib in Resources */,
 				1818962020E074DB00DEA4C7 /* HMLoginController.xib in Resources */,
 				1818962820E0810800DEA4C7 /* HMDataView.xib in Resources */,
+				180BF70720E1E32800C6A299 /* HMMessageCell.xib in Resources */,
 				180D94CB20D898030099BB0A /* HMProfileCell.xib in Resources */,
 				1818963020E0BF5B00DEA4C7 /* HMTjCell.xib in Resources */,
 				180DCB2D20D3562D00EE0BCC /* status.sql in Resources */,
@@ -975,6 +1017,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HMonitor/Pods-HMonitor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImagePicker/BSImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -986,12 +1030,15 @@
 				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProgressHUD/SwiftProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGridCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -1003,6 +1050,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImageViewModeScaleAspect.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
@@ -1038,6 +1086,7 @@
 			files = (
 				180DCB1F20D3562D00EE0BCC /* UIViewController+CZAddition.m in Sources */,
 				180DCB2C20D3562D00EE0BCC /* CZSQLiteManager.swift in Sources */,
+				180BF71020E2194100C6A299 /* HMFeedBackCell.swift in Sources */,
 				180DCB1E20D3562D00EE0BCC /* NSObject+CZRuntime.m in Sources */,
 				180DCB2B20D3562D00EE0BCC /* WBUserAccount.swift in Sources */,
 				180DCB0320D3562D00EE0BCC /* WBMessageViewController.swift in Sources */,
@@ -1046,7 +1095,9 @@
 				180DCB0520D3562D00EE0BCC /* WBMainViewController.swift in Sources */,
 				181895C220DE949F00DEA4C7 /* Const.swift in Sources */,
 				1818960E20DE97BC00DEA4C7 /* PkDetailOutletData.swift in Sources */,
+				180BF6FF20E1D21800C6A299 /* HMMessageController.swift in Sources */,
 				1818961420DE97BC00DEA4C7 /* QyDetailCompanyData.swift in Sources */,
+				180BF6FD20E1D1FE00C6A299 /* HMTakeController.swift in Sources */,
 				181895F420DE97BC00DEA4C7 /* YzDetailMonitorData.swift in Sources */,
 				1818960420DE97BC00DEA4C7 /* MonitorTypeData.swift in Sources */,
 				1818961520DE97BC00DEA4C7 /* HomeQyRootClass.swift in Sources */,
@@ -1062,11 +1113,13 @@
 				180DCB4020D3562D00EE0BCC /* HMPhotoBrowserController.m in Sources */,
 				180DCB3D20D3562D00EE0BCC /* CZEmoticonCell.swift in Sources */,
 				181895FB20DE97BC00DEA4C7 /* HomeQyInfoData.swift in Sources */,
+				180BF70D20E1E87000C6A299 /* QyPkData.swift in Sources */,
 				180DCB0C20D3562D00EE0BCC /* WBBaseViewController.swift in Sources */,
 				1818961020DE97BC00DEA4C7 /* CityXianArea.swift in Sources */,
 				180DCB4420D3562D00EE0BCC /* HMPhotoBrowserAnimator.m in Sources */,
 				1818960320DE97BC00DEA4C7 /* LoginUser.swift in Sources */,
 				180DCB1320D3562D00EE0BCC /* WBUser.swift in Sources */,
+				180BF70320E1D25C00C6A299 /* HMFeedBackController.swift in Sources */,
 				181895C820DE968700DEA4C7 /* WZNetworkTool.swift in Sources */,
 				1818961620DE97BC00DEA4C7 /* IdeaRootClass.swift in Sources */,
 				181895FE20DE97BC00DEA4C7 /* TjDataRootClass.swift in Sources */,
@@ -1105,10 +1158,12 @@
 				180DCB1120D3562D00EE0BCC /* WBStatusListViewModel.swift in Sources */,
 				180DCB1020D3562D00EE0BCC /* WBStatusViewModel.swift in Sources */,
 				181895C020DE36A700DEA4C7 /* SwiftPopMenu.swift in Sources */,
+				180BF70620E1E32800C6A299 /* HMMessageCell.swift in Sources */,
 				180DC98720D2187F00EE0BCC /* AppDelegate.swift in Sources */,
 				181895F920DE97BC00DEA4C7 /* LogData.swift in Sources */,
 				1818964220E0EC7100DEA4C7 /* HMQyPkCell.swift in Sources */,
 				180DCB2A20D3562D00EE0BCC /* WBNetworkManager+Extension.swift in Sources */,
+				180BF70120E1D23000C6A299 /* HMLogController.swift in Sources */,
 				1818961F20E074DB00DEA4C7 /* HMLoginController.swift in Sources */,
 				180DCB0D20D3562D00EE0BCC /* WBDemoViewController.swift in Sources */,
 				180DCB3520D3562D00EE0BCC /* CZEmoticon.swift in Sources */,
@@ -1137,10 +1192,13 @@
 				180DCB0620D3562D00EE0BCC /* WBOAuthViewController.swift in Sources */,
 				180DCB2E20D3562D00EE0BCC /* String+Extensions.swift in Sources */,
 				181895F320DE97BC00DEA4C7 /* TjDataData.swift in Sources */,
+				180BF70A20E1E5B900C6A299 /* HMLogCell.swift in Sources */,
 				181895B920DCDE4600DEA4C7 /* HMBaseTableViewController.swift in Sources */,
+				180BF6FB20E1D1E600C6A299 /* HMAboutController.swift in Sources */,
 				1818960520DE97BC00DEA4C7 /* QyDetailData.swift in Sources */,
 				180D94C920D897F30099BB0A /* HMProfileCell.swift in Sources */,
 				1818962C20E0981100DEA4C7 /* JTSegmentPattern.swift in Sources */,
+				180BF71320E225C300C6A299 /* HMPictureView.swift in Sources */,
 				180DCB3120D3562D00EE0BCC /* UIImageView+WebImage.swift in Sources */,
 				180DCB1820D3562D00EE0BCC /* UIView+CZAddition.m in Sources */,
 				180DCB2820D3562D00EE0BCC /* CZRefreshView.swift in Sources */,

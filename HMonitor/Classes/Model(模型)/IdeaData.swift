@@ -22,8 +22,7 @@ class IdeaData : NSObject, NSCoding{
 	var pictures : [String]!
 	var submitTime : Int!
 	var userId : String!
-
-
+   
 	/**
 	 * 用字典来初始化一个实例并设置各个属性值
 	 */
@@ -36,6 +35,7 @@ class IdeaData : NSObject, NSCoding{
 		pictures = dictionary["pictures"] as? [String]
 		submitTime = dictionary["submitTime"] as? Int
 		userId = dictionary["user_id"] as? String
+        
 	}
 
 	/**
@@ -121,4 +121,6 @@ class IdeaData : NSObject, NSCoding{
 
 	}
 
+    
+   
 }
