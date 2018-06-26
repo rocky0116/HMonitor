@@ -16,6 +16,7 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
     var qyId : String?
     var pkId : String?
     var yzId : String?
+    var yzStr : String?
     var page = 1
     var dataType = "0"
     var dateType = "0"
@@ -36,7 +37,7 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
     lazy var view1 = UIView()
     lazy var historyLab = UILabel()
     lazy var view2 = UIView()
-    lazy var lab1 = UILabel()
+    lazy var lab1 = UIButton()
     lazy var lab2 = UILabel()
     lazy var img = UIImageView()
     
@@ -50,7 +51,7 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
         loadYzType()
         initChart()
         refresh()
-        navItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "电话"), style: UIBarButtonItemStyle.init(rawValue: 0)!, target: self, action: #selector(yzTypeClick))
+        navItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "切换"), style: UIBarButtonItemStyle.init(rawValue: 0)!, target: self, action: #selector(yzTypeClick))
     }
     
     //MARK: 添加UI
@@ -59,16 +60,27 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
         qyInfoLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
             make.height.equalTo(30)
-            make.top.equalTo(navigationBar.snp.bottom).offset(5)
+            make.top.equalTo(navigationBar.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(12)
         }
+        qyInfoLab.textColor = UIColor.darkGray
+        qyInfoLab.font = UIFont.systemFont(ofSize: 14)
+        
         self.view.addSubview(choicTimeSegemnt)
+        choicTimeSegemnt.selectedSegmentIndex = 0
         choicTimeSegemnt.snp.makeConstraints { (make) in
-            make.width.equalTo(240)
+            make.width.equalTo(280)
             make.height.equalTo(30)
-            make.top.equalTo(qyInfoLab.snp.bottom).offset(5)
+            make.top.equalTo(qyInfoLab.snp.bottom).offset(10)
             make.centerX.equalToSuperview()
         }
+        let dic:NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.cz_color(withHex: 0x1CA3E5),NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]
+        let dicSelect:NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.white,NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]
+        
+        choicTimeSegemnt.setTitleTextAttributes(dic as? [AnyHashable : Any], for: .normal)
+        choicTimeSegemnt.setTitleTextAttributes(dicSelect as? [AnyHashable : Any], for: .selected)
+        choicTimeSegemnt.tintColor = UIColor.cz_color(withHex: 0x1CA3E5)
+        
         choicTimeSegemnt.addTarget(self, action: #selector(segmentedControlChanged), for: UIControlEvents.valueChanged)
         
         self.view.addSubview(lineChartView)
@@ -90,7 +102,7 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
         historyLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
             make.height.equalTo(40)
-            make.left.equalToSuperview().offset(0)
+            make.left.equalToSuperview().offset(12)
             make.top.equalTo(lineChartView.snp.bottom).offset(15)
         }
         
@@ -117,16 +129,18 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
         }
        
         
-        lab1.textAlignment = .center
         lab2.textAlignment = .center
         
         historyLab.text = "历史数据"
-        lab1.text = "实时数据"
-        lab2.text = "因子类型"
+        lab1.setTitle("实时数据", for: [])
+        lab1.setTitleColor(UIColor.darkGray, for: [])
+        lab2.text = yzStr
+        lab2.textColor = UIColor.darkGray
        
-        lab1.font = UIFont.systemFont(ofSize: 14)
+        lab1.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         lab2.font = UIFont.systemFont(ofSize: 14)
         historyLab.font = UIFont.systemFont(ofSize: 14)
+        lab1.addTarget(self, action: #selector(dataTypeClick), for: .touchUpInside)
         
         
         self.view.addSubview(tableView)
@@ -366,6 +380,7 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
             self?.popMenu.dismiss()
             print("block select \(index)")
             self?.yzId = self?.yzIds[index]
+            self?.lab2.text = self?.titles[index]
             self?.showTjData()
             
         }

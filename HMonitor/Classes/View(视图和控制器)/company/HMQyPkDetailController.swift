@@ -37,9 +37,11 @@ class HMQyPkDetailController: WBBaseViewController,UITableViewDataSource,UITable
         qyNameLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
             make.height.equalTo(30)
-            make.top.equalTo(navigationBar.snp.bottom).offset(5)
+            make.top.equalTo(navigationBar.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(12)
         }
+        qyNameLab.textColor = UIColor.darkGray
+        qyNameLab.font = UIFont.systemFont(ofSize: 14)
         self.view.addSubview(pkInfoLab)
         pkInfoLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
@@ -47,6 +49,8 @@ class HMQyPkDetailController: WBBaseViewController,UITableViewDataSource,UITable
             make.top.equalTo(qyNameLab.snp.bottom).offset(5)
             make.left.equalToSuperview().offset(12)
         }
+        pkInfoLab.textColor = UIColor.darkGray
+        pkInfoLab.font = UIFont.systemFont(ofSize: 14)
         
         self.view.addSubview(view1)
         view1.backgroundColor = UIColor.cz_color(withHex: 0xEFEFF4)
@@ -159,6 +163,7 @@ class HMQyPkDetailController: WBBaseViewController,UITableViewDataSource,UITable
         vc.qyId = self.qyId!
         vc.pkId = self.pkId!
         vc.yzType = self.yzType!
+        vc.yzStr = pkDatas[indexPath.row].monitorName
         vc.yzId = pkDatas[indexPath.row].monitorId!
         
         navigationController?.pushViewController(vc, animated: true)

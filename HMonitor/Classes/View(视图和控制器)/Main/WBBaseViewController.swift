@@ -91,6 +91,13 @@ class WBBaseViewController: UIViewController {
         segmented.selectedSegmentIndex = 0
         segmented.addTarget(self, action: #selector(segementDidchange), for: UIControlEvents.valueChanged)
         
+        let dic:NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.cz_color(withHex: 0x1CA3E5),NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]
+        let dicSelect:NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.white,NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]
+        
+        segmented.setTitleTextAttributes(dic as? [AnyHashable : Any], for: .normal)
+        segmented.setTitleTextAttributes(dicSelect as? [AnyHashable : Any], for: .selected)
+        segmented.tintColor = UIColor.cz_color(withHex: 0x1CA3E5)
+        
         self.view.addSubview(segmented)
         
         segmented.snp.makeConstraints { (make) in

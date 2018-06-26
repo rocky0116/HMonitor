@@ -40,9 +40,11 @@ class HMQyDetailController: WBBaseViewController ,UITableViewDelegate,UITableVie
         qyNameLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
             make.height.equalTo(30)
-            make.top.equalTo(navigationBar.snp.bottom).offset(5)
+            make.top.equalTo(navigationBar.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(12)
         }
+        qyNameLab.textColor = UIColor.darkGray
+        qyNameLab.font = UIFont.systemFont(ofSize: 14)
         self.view.addSubview(addressLab)
         addressLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
@@ -50,6 +52,8 @@ class HMQyDetailController: WBBaseViewController ,UITableViewDelegate,UITableVie
             make.top.equalTo(qyNameLab.snp.bottom).offset(5)
             make.left.equalToSuperview().offset(12)
         }
+        addressLab.textColor = UIColor.darkGray
+        addressLab.font = UIFont.systemFont(ofSize: 14)
         self.view.addSubview(qyInfoLab)
         qyInfoLab.snp.makeConstraints { (make) in
             make.width.equalTo(screenWidth)
@@ -57,6 +61,8 @@ class HMQyDetailController: WBBaseViewController ,UITableViewDelegate,UITableVie
             make.top.equalTo(addressLab.snp.bottom).offset(5)
             make.left.equalToSuperview().offset(12)
         }
+        qyInfoLab.textColor = UIColor.darkGray
+        qyInfoLab.font = UIFont.systemFont(ofSize: 14)
         self.view.addSubview(view1)
         view1.backgroundColor = UIColor.cz_color(withHex: 0xEFEFF4)
         view1.snp.makeConstraints { (make) in
