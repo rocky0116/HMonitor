@@ -11,5 +11,11 @@
 
 #import "CZAdditions.h"
 #import "HMPhotoBrowserController.h"
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import "AnimatedAnnotation.h"
+#import "AnimatedAnnotationView.h"
 
 #endif /* Monitor_Bridge_h */

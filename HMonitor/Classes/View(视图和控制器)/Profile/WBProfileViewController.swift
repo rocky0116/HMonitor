@@ -18,10 +18,9 @@ class WBProfileViewController: WBBaseViewController {
     let userImageView = UIImageView(image: UIImage(named: "timg"))
     let headView = UIView()
     let userNameLab = UILabel()
-    /// 表格视图 - 如果用户没有登录，就不创建
-    var tableView: UITableView?
-    /// 刷新控件
-    //    var refreshControl: UIRefreshControl?
+    
+    lazy var tableView = UITableView()
+    lazy var exitBtn = UIButton()
    
     override func setupUI() {
         super.setupUI()
@@ -29,38 +28,34 @@ class WBProfileViewController: WBBaseViewController {
         setupTableView()
     }
    
-    /// 设置表格视图 - 用户登录之后执行
-    /// 子类重写此方法，因为子类不需要关心用户登录之前的逻辑
+   
     func setupTableView() {
+        self.view.addSubview(exitBtn)
+        exitBtn.snp.makeConstraints { (make) in
+            make.height.equalTo(40)
+            make.left.equalToSuperview().offset(40)
+            make.right.equalToSuperview().offset(-40)
+            make.bottom.equalToSuperview().offset(-70)
+        }
+        exitBtn.backgroundColor = UIColor.init(red: 71/225, green: 162/225, blue: 223/225, alpha: 1)
+        exitBtn.setTitle("退出登录", for: [])
+        exitBtn.setTitleColor(UIColor.white, for: [])
         
-        tableView = UITableView(frame: view.bounds, style: .plain)
-        
-        view.insertSubview(tableView!, belowSubview: navigationBar)
-        
+        self.view.addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.width.equalTo(screenWidth)
+            make.top.equalTo(navigationBar.snp.bottom).offset(0)
+            make.bottom.equalTo(exitBtn.snp.top).offset(-20)
+        }
         // 设置数据源&代理 -> 目的：子类直接实现数据源方法
-        tableView?.dataSource = self
-        tableView?.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         
-        // 设置内容缩进
-        tableView?.contentInset = UIEdgeInsets(top: 40,
-                                               left: 0,
-                                               bottom: tabBarController?.tabBar.bounds.height ?? 49,
-                                               right: 0)
-        
-        // 修改指示器的缩进 - 强行解包是为了拿到一个必有的 inset
-        tableView?.scrollIndicatorInsets = tableView!.contentInset
-        
-        // 设置刷新控件
-        // 1> 实例化控件
+     
         refresh()
         
         // 注册原型 cell
-        tableView?.register(UINib(nibName: "HMProfileCell", bundle: nil), forCellReuseIdentifier: cellId)
-        
-        tableView?.estimatedRowHeight = 300
-        
-        tableView?.rowHeight = 50
-        
+        tableView.register(UINib(nibName: "HMProfileCell", bundle: nil), forCellReuseIdentifier: cellId)
         setupHeader()
     }
     
@@ -68,31 +63,21 @@ class WBProfileViewController: WBBaseViewController {
     func refresh(){
         // 下拉刷新
         header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
-        // 上拉刷新
-        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRefresh))
-        tableView?.mj_header = header
-        tableView?.mj_footer = footer
+        tableView.mj_header = header
         
     }
     
     @objc func headerRefresh(){
-        tableView?.mj_header.endRefreshing()//结束头部刷新
-        loadData()
-        print("刷新")
+        tableView.mj_header.endRefreshing()//结束头部刷新
     }
     
-    @objc func footerRefresh(){
-        loadData()
-        tableView?.mj_footer.endRefreshing()//结束尾部刷新
-        print("加载")
-    }
     
     func setupHeader(){
-        headView.frame = CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 180)
+        headView.frame = CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 150)
         headView.backgroundColor = UIColor.init(red: 71/225, green: 162/225, blue: 223/225, alpha: 1)
         
         
-        userImageView.frame = CGRect(x: (UIScreen.cz_screenWidth()-70)/2, y: 30, width: 70, height: 70)
+        userImageView.frame = CGRect(x: (UIScreen.cz_screenWidth()-70)/2, y: 20, width: 70, height: 70)
         
         userNameLab.frame = CGRect(x: 0, y: Int(userImageView.frame.maxY+10), width: Int(UIScreen.cz_screenWidth()), height: 30)
         userNameLab.textAlignment = .center
@@ -102,7 +87,7 @@ class WBProfileViewController: WBBaseViewController {
         headView.addSubview(userImageView)
         headView.addSubview(userNameLab)
         
-        tableView?.tableHeaderView = headView
+        tableView.tableHeaderView = headView
         
         footer.isHidden = true
     }

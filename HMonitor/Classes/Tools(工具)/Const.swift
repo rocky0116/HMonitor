@@ -14,6 +14,7 @@ let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
 let GoUpQyYzListy = "GoUpQyYzListy"
+let QyListToPkList = "QyListToPkList"
 
 //用户名
 let userName = "username"
@@ -30,7 +31,7 @@ let versionCode = "2.0v"
 let BASE_URL = "http://39.104.83.17:8081/app/"
 
 /// 高德地图APIKey
-let APIKey = "6d056caac306187c167267a1e60b1932"
+let APIKey = "a10d33917376acabc50b482524bc6a55"
 
 /// 间距
 let kMargin: CGFloat = 10.0

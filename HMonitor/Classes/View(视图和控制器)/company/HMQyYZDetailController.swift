@@ -160,6 +160,7 @@ class HMQyYZDetailController: WBBaseViewController,UITableViewDelegate,UITableVi
     
     //MARK:添加因子数据列表
     func loadYzType(){
+        print(yzType!)
         WZNetworkTool.shareNetworkTool.loadDataYzType(userAccnum: userAccnum!, token: ten!, type: yzType!) { (objInfo) in
             self.titles.removeAll()
             self.yzIds.removeAll()

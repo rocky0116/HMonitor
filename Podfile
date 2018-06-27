@@ -17,5 +17,8 @@ pod "RxCocoa"
 pod "PGDatePicker"
 pod "Charts"
 pod "BSImagePicker"
+pod "AMap3DMap"
+pod "AMapSearch"
+pod "AMapLocation"
 
 end

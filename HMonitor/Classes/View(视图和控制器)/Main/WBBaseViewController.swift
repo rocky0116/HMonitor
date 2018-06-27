@@ -103,7 +103,7 @@ class WBBaseViewController: UIViewController {
         segmented.snp.makeConstraints { (make) in
             make.width.equalTo(130)
             make.height.equalTo(30)
-            make.top.equalTo(navigationBar.snp.bottom).offset(5)
+            make.top.equalTo(navigationBar.snp.bottom).offset(8)
             make.centerX.equalTo(self.view)
         }
     }
