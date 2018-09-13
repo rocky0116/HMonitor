@@ -35,7 +35,7 @@ class WBProfileViewController: WBBaseViewController {
             make.height.equalTo(40)
             make.left.equalToSuperview().offset(40)
             make.right.equalToSuperview().offset(-40)
-            make.bottom.equalToSuperview().offset(-70)
+            make.bottom.equalToSuperview().offset(-100)
         }
         exitBtn.backgroundColor = UIColor.init(red: 71/225, green: 162/225, blue: 223/225, alpha: 1)
         exitBtn.setTitle("退出登录", for: [])
